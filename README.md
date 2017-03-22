@@ -8,3 +8,13 @@ Topics Covered :
 
 1.Pushing Json data from a Json file to HDFS as Avro files using Gobblin.                  
 2.Pushing Json data through Kafka to Gobblin as saving as Avro files in HDFS.               
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------     
+
+You can reach me for any suggestions/clarifications on  : revanthkumar95@gmail.com                                              
+Feel free to share any insights or constructive criticism. Cheers!!                                                           
+#Happy Gobbling!!!..  
