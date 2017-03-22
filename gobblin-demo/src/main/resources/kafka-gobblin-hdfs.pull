@@ -1,0 +1,41 @@
+###################### job configuration file ######################
+
+job.name=kafka-gobblin-hdfs
+job.group=Kafka-Gobblin-Demo
+job.description=Publishing JSON data from Kafka to HDFS in Avro format.
+job.schedule=0/15 * * * * ?
+job.commit.policy=full
+
+source.class=com.gobblin.kafka.hdfs.KafkaJsonSource
+converter.classes=com.gobblin.kafka.hdfs.KafkaJsonConverter
+extract.namespace=kafka-gobblin-hdfs-test-2
+
+
+topic.whitelist=kafka-gobblin-hdfs-test-2
+bootstrap.with.offset=earliest
+
+kafka.brokers=localhost:9092
+
+fs.uri=hdfs://localhost:9000
+writer.fs.uri=hdfs://localhost:9000
+state.store.fs.uri=hdfs://localhost:9000
+
+
+writer.destination.type=HDFS
+writer.output.format=AVRO
+writer.output.schema={"namespace":"kafka-gobblin-hdfs-test", "type":"record", "name":"event", "fields":[{"name":"timestamp", "type":"string"}, {"name":"type",  "type":"string"}, {"name":"level", "type":"int"}, {"name":"message",  "type":"string"}]}
+
+mr.job.root.dir=/opt/gobblin/job_work/working
+state.store.dir=/opt/gobblin/job_work/state-store
+task.data.root.dir=/opt/gobblin/job_work/task-data
+writer.staging.dir=/opt/gobblin/job_work/task-staging
+writer.output.dir=/opt/gobblin/job_work/task-output
+data.publisher.final.dir=/opt/gobblin/output
+
+mr.job.max.mappers=8
+
+data.publisher.type=gobblin.publisher.BaseDataPublisher
+data.publisher.replace.final.dir=false
+
+
+

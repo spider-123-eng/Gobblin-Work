@@ -1,0 +1,56 @@
+
+###################### job configuration file ######################
+
+
+job.name=json-gobblin-hdfs-2
+job.group=Gobblin-Json-Demo
+job.description=Publishing JSON data from files to HDFS in Avro format.
+
+source.class=com.gobblin.json.hdfs.SimpleJsonSource
+converter.classes=com.gobblin.json.hdfs.SimpleJsonConverter
+extract.namespace=jsonTo
+
+# source configuration properties
+# comma-separated list of file URIs (supporting different schemes, e.g., file://, ftp://, sftp://, http://, etc)
+source.filebased.files.to.pull=file:///opt/gobblin/simplejson.json
+
+# whether to use authentication or not (default is false)
+source.conn.use.authentication=
+# credential for authentication purpose (optional)
+source.conn.domain=
+source.conn.username=
+source.conn.password=
+
+# source data schema
+source.schema={"namespace":"example.avro", "type":"record", "name":"User", "fields":[{"name":"name", "type":"string"}, {"name":"favorite_number",  "type":"int"}, {"name":"favorite_color", "type":"string"}]}
+
+# quality checker configuration properties
+qualitychecker.task.policies=gobblin.policies.count.RowCountPolicy,gobblin.policies.schema.SchemaCompatibilityPolicy
+qualitychecker.task.policy.types=OPTIONAL,OPTIONAL
+qualitychecker.row.policies=gobblin.policies.schema.SchemaRowCheckPolicy
+qualitychecker.row.policy.types=OPTIONAL
+qualitychecker.row.err.file=/opt/gobblin/logs/
+
+# data publisher class to be used
+data.publisher.type=gobblin.publisher.BaseDataPublisher
+
+# writer configuration properties
+writer.destination.type=HDFS
+writer.output.format=AVRO
+
+
+fs.uri=hdfs://localhost:9000
+writer.fs.uri=hdfs://localhost:9000
+state.store.fs.uri=hdfs://localhost:9000
+
+
+mr.job.root.dir=/opt/gobblin/job_work/working
+state.store.dir=/opt/gobblin/job_work/state-store
+task.data.root.dir=/opt/gobblin/job_work/task-data
+writer.staging.dir=/opt/gobblin/job_work/task-staging
+writer.output.dir=/opt/gobblin/job_work/task-output
+data.publisher.final.dir=/opt/gobblin/output
+
+
+
+
