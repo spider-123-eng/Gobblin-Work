@@ -22,8 +22,8 @@ Topics Covered :
 	Goblin Set-up:              
 	--------------
 #Step 1:         
-	Download the latest Gobblin release from the Release Page
-	or     
+	Download the latest Gobblin release from the Release Page   
+	or          
 	wget https://github.com/linkedin/gobblin/releases/download/gobblin_0.8.0/gobblin-distribution-0.8.0.tar.gz    
 	
  #Step 2 :     
