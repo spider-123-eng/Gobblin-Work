@@ -32,7 +32,7 @@ Goblin Set-up:
 	tar -zxvf gobblin-distribution-0.8.0.tar.gz
 	
 #Step 3:                
-	cd /opt/gobblin/gobblin-dist                 
+	cd /opt/gobblin/                 
 	create following folder :          
 	mkdir job_work         
 	mkdir job_conf          
@@ -42,8 +42,8 @@ Goblin Set-up:
 
 vi ~/.bash_profile          
 
-	export GOBBLIN_JOB_CONFIG_DIR=/opt/gobblin/gobblin-dist/job_conf                   
-	export GOBBLIN_WORK_DIR=/opt/gobblin/gobblin-dist/job_work                     
+	export GOBBLIN_JOB_CONFIG_DIR=/opt/gobblin/job_conf                   
+	export GOBBLIN_WORK_DIR=/opt/gobblin/job_work                     
 	export HADOOP_HOME=/opt/hadoop-2.6.0                           
 	export PATH=$PATH:$HADOOP_HOME/bin                      
 	export KAFKA_HOME=opt/kafka_2.10-0.8.2.0                          
