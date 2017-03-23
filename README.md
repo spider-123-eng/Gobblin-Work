@@ -49,9 +49,10 @@ vi ~/.bash_profile
 	export PATH=$PATH:$HADOOP_HOME/bin                      
 	export KAFKA_HOME=opt/kafka_2.10-0.8.2.0                          
 	export PATH=$PATH:$KAFKA_HOME/bin                  
-source ~/.bash_profile
+source ~/.bash_profile  
 
-
+Run Your First Job:        
+------------------
 
 
 See also for references:
