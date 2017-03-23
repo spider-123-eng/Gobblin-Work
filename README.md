@@ -50,6 +50,12 @@ vi ~/.bash_profile
 	export PATH=$PATH:$KAFKA_HOME/bin                  
 source ~/.bash_profile
 
+
+
+
+See also for references:
+* https://github.com/linkedin/gobblin/wiki/Kafka-HDFS-Ingestion
+* https://github.com/linkedin/gobblin/wiki/Gobblin%20Deployment#Hadoop-MapReduce-Deployment
 ------------------------------------------------------------------------------------------------------------------------------------     
 
 You can reach me for any suggestions/clarifications on  : revanthkumar95@gmail.com                                              
