@@ -31,7 +31,8 @@ Goblin Set-up:
 	Extract gobblin-distribution-0.8.0.tar.gz to directory /opt/gobblin (mkdir /opt/gobblin/)
 	tar -zxvf gobblin-distribution-0.8.0.tar.gz
 	
-#Step 3:                
+#Step 3:                 
+
 	cd /opt/gobblin/                 
 	create following folder :          
 	mkdir job_work         
