@@ -19,7 +19,36 @@ Topics Covered :
     * Gobblin 0.8.0      
     * Maven 3.3.9        
 
+	Goblin Set-up:              
+	--------------
+#Step 1:         
+	Download the latest Gobblin release from the Release Page
+	or     
+	wget https://github.com/linkedin/gobblin/releases/download/gobblin_0.8.0/gobblin-distribution-0.8.0.tar.gz    
+	
+ #Step 2 :     
+ 
+	Extract gobblin-distribution-0.8.0.tar.gz to directory /opt/gobblin (mkdir /opt/gobblin/)
+	tar -zxvf gobblin-distribution-0.8.0.tar.gz
+	
+#Step 3:                
+	cd /opt/gobblin/gobblin-dist                 
+	create following folder :          
+	mkdir job_work         
+	mkdir job_conf          
+	mkdir logs        
+	
+#Step 4 :           
 
+vi ~/.bash_profile          
+
+	export GOBBLIN_JOB_CONFIG_DIR=/opt/gobblin/gobblin-dist/job_conf                   
+	export GOBBLIN_WORK_DIR=/opt/gobblin/gobblin-dist/job_work                     
+	export HADOOP_HOME=/opt/hadoop-2.6.0                           
+	export PATH=$PATH:$HADOOP_HOME/bin                      
+	export KAFKA_HOME=opt/kafka_2.10-0.8.2.0                          
+	export PATH=$PATH:$KAFKA_HOME/bin                  
+source ~/.bash_profile
 
 ------------------------------------------------------------------------------------------------------------------------------------     
 
