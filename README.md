@@ -22,7 +22,7 @@ This Gobblin project uses the following technologies:
 Goblin Set-up:              
 --------------
 #Step 1:         
-	Download the latest Gobblin release from the Release Page   
+	Download the latest Gobblin release from the <a href="https://github.com/linkedin/gobblin/releases">Release Page</a>    
 	or          
 	wget https://github.com/linkedin/gobblin/releases/download/gobblin_0.8.0/gobblin-distribution-0.8.0.tar.gz    
 	
