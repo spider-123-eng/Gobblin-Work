@@ -11,16 +11,16 @@ Topics Covered :
 
 
 
-	This Gobblin project uses the following technologies:
-	----------------------------------------------------
+This Gobblin project uses the following technologies:
+----------------------------------------------------
     * ZooKeeper    
     * Kafka 0.8.2     
     * Hadoop 2.6.0      
     * Gobblin 0.8.0      
     * Maven 3.3.9        
 
-	Goblin Set-up:              
-	--------------
+Goblin Set-up:              
+--------------
 #Step 1:         
 	Download the latest Gobblin release from the Release Page   
 	or          
