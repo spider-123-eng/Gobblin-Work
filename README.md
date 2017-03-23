@@ -19,7 +19,7 @@ This Gobblin project uses the following technologies:
     * Gobblin 0.8.0      
     * Maven 3.3.9        
 
-Goblin Set-up:              
+Gobblin Set-up:              
 --------------
 #Step 1:         
 	Download the latest Gobblin release from the <a href="https://github.com/linkedin/gobblin/releases">Release Page</a>    
@@ -51,7 +51,7 @@ vi ~/.bash_profile
 	export PATH=$PATH:$KAFKA_HOME/bin                  
 source ~/.bash_profile  
 
-Run Your First Job:        
+Running Your First Gobblin Job:        
 ------------------
 
 
