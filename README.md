@@ -75,7 +75,9 @@ Steps :
 	cd /opt/gobblin/gobblin-dist/ 
 	and run the command    bin/gobblin-standalone.sh start          
 
-
+* Absorb the OutPut in HDFS :           
+	hadoop fs -ls /opt/gobblin/output       
+	
 
 See also for references:            
 -----------------------
