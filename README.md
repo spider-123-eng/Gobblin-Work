@@ -53,9 +53,10 @@ source ~/.bash_profile
 
 Running Your First Gobblin Job:        
 -------------------------------
-Goal of this example :             
-	
-	To utilize Gobblin that will:                
+Goal of this example :             	
+
+To utilize Gobblin that will:      
+
 	1. Extract Kafka Topic Messages .
 	2. Transform the JSON Message payload into the AVRO format.
 	3. Push data into HDFS/Local .
