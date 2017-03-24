@@ -57,7 +57,7 @@ Goal of this example :
 
 To utilize Gobblin that will:      
 
-	1. Extract JSON Messages .
+	1. Extract JSON Messages from a simple JSON file.
 	2. Transform the JSON Message payload into the AVRO format.
 	3. Push the output data into HDFS/Local .
 
