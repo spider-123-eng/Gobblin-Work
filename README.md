@@ -78,7 +78,14 @@ Steps :
 
 * Absorb the OutPut in HDFS :           
 	hadoop fs -ls /opt/gobblin/output       
-	
+
+ * To store the output in Local :                 
+	comment out the following lines in json-gobblin-hdfs.pull as below and launch the job .                     
+	#fs.uri=hdfs://localhost:9000                       
+	#writer.fs.uri=hdfs://localhost:9000                       
+	#state.store.fs.uri=hdfs://localhost:9000                            
+
+	Now you can absorb the output in the /opt/gobblin/output  directory 	
 
 See also for references:            
 -----------------------
