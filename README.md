@@ -85,7 +85,10 @@ Steps :
 	#writer.fs.uri=hdfs://localhost:9000                       
 	#state.store.fs.uri=hdfs://localhost:9000                            
 
-	Now you can observe the output in the /opt/gobblin/output  directory 	
+	Now you can observe the output in the /opt/gobblin/output  directory as an Avro file.	   
+	To see the content of the job output, use the Avro tools to convert Avro to JSON. Download the latest version of Avro tools             (e.g. avro-tools-1.8.1.jar): and run           
+	java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json                
+
 
 See also for references:            
 -----------------------
