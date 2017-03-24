@@ -7,7 +7,7 @@ Topics Covered :
 ----------------
 
 1. Extracts records from JSON files and store them as Avro files in HDFS .                                   
-2. Pushing Json data through Kafka to Gobblin as saving as Avro files in HDFS.       
+2. Pushing Json data from Kafka to Gobblin and saving them as Avro files in HDFS.       
 
 
 
