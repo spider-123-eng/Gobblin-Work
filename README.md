@@ -57,9 +57,9 @@ Goal of this example :
 
 To utilize Gobblin that will:      
 
-	1. Extract Kafka Topic Messages .
+	1. Extract JSON Messages .
 	2. Transform the JSON Message payload into the AVRO format.
-	3. Push data into HDFS/Local .
+	3. Push the output data into HDFS/Local .
 
 Steps :               
 * Copy <a href="https://github.com/Re1tReddy/Gobblin-Work/blob/master/gobblin-demo/src/main/resources/json-gobblin-hdfs.pull">json-gobblin-hdfs.pull</a> to job_conf folder which is created in step 3, and make sure that the environment variable GOBBLIN_JOB_CONFIG_DIR, JAVA_HOME are set correctly. Make the changes in the json-gobblin-hdfs.pull accordingly .                                 
