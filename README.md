@@ -52,7 +52,11 @@ vi ~/.bash_profile
 source ~/.bash_profile  
 
 Running Your First Gobblin Job:        
-------------------
+-------------------------------
+Goal of this example :             
+To utilize Gobblin that will:                
+1. Extracts records from JSON files and store them as Avro files in HDFS/Local .
+
 Steps :               
 * Copy <a href="https://github.com/Re1tReddy/Gobblin-Work/blob/master/gobblin-demo/src/main/resources/json-gobblin-hdfs.pull">json-gobblin-hdfs.pull</a> to job_conf folder which is created in step 3, and make sure that the environment variable GOBBLIN_JOB_CONFIG_DIR, JAVA_HOME are set correctly.                   
 
