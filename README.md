@@ -72,8 +72,8 @@ See also for references:
 -----------------------
 * http://gobblin.readthedocs.io/en/latest/Getting-Started/
 * http://gobblin.readthedocs.io/en/latest/Gobblin-Architecture/ 
-* https://github.com/linkedin/gobblin/wiki/Kafka-HDFS-Ingestion
-* https://github.com/linkedin/gobblin/wiki/Gobblin%20Deployment#Hadoop-MapReduce-Deployment
+* http://gobblin.readthedocs.io/en/latest/case-studies/Kafka-HDFS-Ingestion/
+* http://gobblin.readthedocs.io/en/latest/user-guide/Gobblin-Deployment/
 ------------------------------------------------------------------------------------------------------------------------------------     
 
 You can reach me for any suggestions/clarifications on  : revanthkumar95@gmail.com                                              
