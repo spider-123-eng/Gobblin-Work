@@ -6,7 +6,7 @@ Gobblin is a universal data ingestion framework for extracting, transforming, an
 Topics Covered :     
 ----------------
 
-1. Extracts records from JSON files and store them as Avro files in HDFS .                                   
+1. Extracts records from JSON files and store them as Avro files in HDFS/Local .                                   
 2. Pushing Json data from Kafka to Gobblin and saving them as Avro files in HDFS.       
 3. Implementing custom DataWriter , to write data as sequence files in HDFS.                           
 
