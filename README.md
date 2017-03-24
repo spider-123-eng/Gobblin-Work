@@ -62,7 +62,7 @@ To utilize Gobblin that will:
 	3. Push data into HDFS/Local .
 
 Steps :               
-* Copy <a href="https://github.com/Re1tReddy/Gobblin-Work/blob/master/gobblin-demo/src/main/resources/json-gobblin-hdfs.pull">json-gobblin-hdfs.pull</a> to job_conf folder which is created in step 3, and make sure that the environment variable GOBBLIN_JOB_CONFIG_DIR, JAVA_HOME are set correctly.                   
+* Copy <a href="https://github.com/Re1tReddy/Gobblin-Work/blob/master/gobblin-demo/src/main/resources/json-gobblin-hdfs.pull">json-gobblin-hdfs.pull</a> to job_conf folder which is created in step 3, and make sure that the environment variable GOBBLIN_JOB_CONFIG_DIR, JAVA_HOME are set correctly. Make the changes in the json-gobblin-hdfs.pull accordingly .                                 
 
 * Make sure the environment variable GOBBLIN_WORK_DIR is pointed to job_work properly because, Gobblin will write job output as well as other information there, such as locks and state-store (for more information, see the <a href="http://gobblin.readthedocs.io/en/latest/user-guide/Gobblin-Deployment/#Standalone-Deployment"> Standalone Deployment page</a>) .               
 * Download this gobblin-demo project,extract it and build the jar.               
