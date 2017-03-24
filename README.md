@@ -76,7 +76,7 @@ Steps :
 	cd /opt/gobblin/gobblin-dist/ 
 	and run the command    bin/gobblin-standalone.sh start          
 
-* Absorb the OutPut in HDFS :           
+* Observe the OutPut in HDFS :           
 	hadoop fs -ls /opt/gobblin/output       
 
  * To store the output in Local :                 
@@ -85,7 +85,7 @@ Steps :
 	#writer.fs.uri=hdfs://localhost:9000                       
 	#state.store.fs.uri=hdfs://localhost:9000                            
 
-	Now you can absorb the output in the /opt/gobblin/output  directory 	
+	Now you can observe the output in the /opt/gobblin/output  directory 	
 
 See also for references:            
 -----------------------
