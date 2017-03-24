@@ -33,7 +33,7 @@ Gobblin Set-up:
 	
 #Step 3:                 
 
-	cd /opt/gobblin/                 
+	cd /opt/gobblin/gobblin-dist                 
 	create following folder :          
 	mkdir job_work         
 	mkdir job_conf          
@@ -43,8 +43,8 @@ Gobblin Set-up:
 
 vi ~/.bash_profile          
 
-	export GOBBLIN_JOB_CONFIG_DIR=/opt/gobblin/job_conf                   
-	export GOBBLIN_WORK_DIR=/opt/gobblin/job_work                     
+	export GOBBLIN_JOB_CONFIG_DIR=/opt/gobblin/gobblin-dist/job_conf                   
+	export GOBBLIN_WORK_DIR=/opt/gobblin/gobblin-dist/job_work                     
 	export HADOOP_HOME=/opt/hadoop-2.6.0                           
 	export PATH=$PATH:$HADOOP_HOME/bin                      
 	export KAFKA_HOME=opt/kafka_2.10-0.8.2.0                          
@@ -68,10 +68,11 @@ Steps :
 * Download this gobblin-demo project,extract it and build the jar.               
 	wget https://github.com/Re1tReddy/Gobblin-Work          
 	mvn clean install            
-	copy the gobblin-demo-0.1.0-SNAPSHOT-jar-with-dependencies.jar to /opt/gobblin/lib folder.           
+	copy the gobblin-demo-0.1.0-SNAPSHOT-jar-with-dependencies.jar to /opt/gobblin/gobblin-dist/lib folder.           
+	copy simplejson.json to  opt/gobblin/gobblin-dist/ folder.                 
 	
 * Launch Gobblin Job:             
-	cd /opt/gobblin/ 
+	cd /opt/gobblin/gobblin-dist/ 
 	and run the command    bin/gobblin-standalone.sh start          
 
 
