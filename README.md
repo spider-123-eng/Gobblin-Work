@@ -68,7 +68,8 @@ Steps :
 
 
 
-See also for references:
+See also for references:            
+-----------------------
 * http://gobblin.readthedocs.io/en/latest/Getting-Started/
 * http://gobblin.readthedocs.io/en/latest/Gobblin-Architecture/ 
 * https://github.com/linkedin/gobblin/wiki/Kafka-HDFS-Ingestion
